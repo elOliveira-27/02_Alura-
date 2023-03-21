@@ -1,0 +1,153 @@
+:root {
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-terciaria: #167BF7;
+    --cor-destaque:  #38D96F;
+    --cor-background: #00030C;
+
+    --fonte-principal: 'Inter';
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display:grid; 
+    grid-template-columns: 50% 50%;
+}
+
+.container__grid {
+    margin: 0 6em;
+}
+
+.container__copy {
+    padding: 2em;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 8em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer {
+    margin: 6em 4em;
+    text-align: center; 
+}
+
+.footer__lista{
+    margin-bottom: 2em;
+    display:flex;
+    justify-content: space-around;
+    color: var(--cor-primaria);
+    list-style-type: none;
+    text-decoration: none;    
+}
+
+.botao__primario{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1em;
+    display:block;
+    margin-bottom: 1em;
+} 
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-primaria);
+} 
+
+.botao__terciario {
+    display:inline-block;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+
+.copy__titulo__primario {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.copy__titulo__secundario {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.2em;
+}
+
+.copy__titulo__terciario {
+    font-size: 48px;
+    margin-bottom: 1em;
+}
+
+.copy__lista {
+    font-size: 24px;
+}
+
+.copy__aviso {
+    font-size: 12px;
+    color: var(--cor-secundaria);
+    margin-bottom: 1em;
+}
+
+.imagem__primaria {
+    margin: 1em 0 2em 0;
+}
+
+.imagem__secundaria {
+    width:80%;
+}
+
+.imagem__footer {
+    margin-bottom: 2em;
+}
+
+.lista__link a:hover{
+    color: var(--cor-terciaria);
+}
+
+.lista__link a:active{
+    color: var(--cor-destaque);
+}
+
+.botao__primario:hover{
+    background-color: var(--cor-destaque);
+} 
+
+.botao__secundario:hover{
+    border: 2px solid var(--cor-destaque);
+} 
